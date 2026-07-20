@@ -54,12 +54,12 @@ CREATE TABLE Customers (
 -- ===========================================
 -- Orders Table
 -- ===========================================
+
 CREATE TABLE Orders (
-    order_number INT PRIMARY KEY AUTO_INCREMENT,
+    order_number INT PRIMARY KEY,
     customer_id INT NOT NULL,
     order_date DATE NOT NULL,
     status VARCHAR(50) NOT NULL,
-    deal_size VARCHAR(20),
 
     FOREIGN KEY (customer_id)
         REFERENCES Customers(customer_id)
@@ -68,26 +68,21 @@ CREATE TABLE Orders (
 -- ===========================================
 -- Order_Details Table
 -- ===========================================
+
 CREATE TABLE Order_Details (
+    order_number INT,
+    order_line_number INT,
+    product_id INT,
+    quantity INT,
+    price_each DECIMAL(10,2),
+    sales DECIMAL(10,2),
+    deal_size VARCHAR(20),
 
-    order_number INT NOT NULL,
+    PRIMARY KEY(order_number, order_line_number),
 
-    order_line_number INT NOT NULL,
-
-    product_id INT NOT NULL,
-
-    quantity INT NOT NULL,
-
-    price_each DECIMAL(10,2) NOT NULL,
-
-    sales DECIMAL(10,2) NOT NULL,
-
-    PRIMARY KEY (order_number, order_line_number),
-
-    FOREIGN KEY (order_number)
+    FOREIGN KEY(order_number)
         REFERENCES Orders(order_number),
 
-    FOREIGN KEY (product_id)
+    FOREIGN KEY(product_id)
         REFERENCES Products(product_id)
-
 );
