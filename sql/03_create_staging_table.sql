@@ -1,0 +1,60 @@
+-- =============================================
+-- Staging Table
+-- Raw Sales Dataset
+-- =============================================
+
+USE Sales_Analytics;
+
+CREATE TABLE Sales_Raw (
+
+    ORDERNUMBER INT,
+
+    QUANTITYORDERED INT,
+
+    PRICEEACH DECIMAL(10,2),
+
+    ORDERLINENUMBER INT,
+
+    SALES DECIMAL(10,2),
+
+    ORDERDATE VARCHAR(30),
+
+    STATUS VARCHAR(20),
+
+    QTR_ID INT,
+
+    MONTH_ID INT,
+
+    YEAR_ID INT,
+
+    PRODUCTLINE VARCHAR(50),
+
+    MSRP DECIMAL(10,2),
+
+    PRODUCTCODE VARCHAR(20),
+
+    CUSTOMERNAME VARCHAR(100),
+
+    PHONE VARCHAR(30),
+
+    ADDRESSLINE1 VARCHAR(255),
+
+    ADDRESSLINE2 VARCHAR(255),
+
+    CITY VARCHAR(50),
+
+    STATE VARCHAR(50),
+
+    POSTALCODE VARCHAR(20),
+
+    COUNTRY VARCHAR(50),
+
+    TERRITORY VARCHAR(20),
+
+    CONTACTLASTNAME VARCHAR(50),
+
+    CONTACTFIRSTNAME VARCHAR(50),
+
+    DEALSIZE VARCHAR(20)
+
+);
