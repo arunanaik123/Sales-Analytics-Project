@@ -24,7 +24,7 @@ The company follows a discount-based pricing strategy, as products are generally
 
 ### Findings
 
-- Product Code **(Insert Product Code)** generated the highest revenue.
+- Product Code **S18_3232** generated the highest revenue.
 - A few products account for a significant portion of total company revenue.
 - Revenue is concentrated among the top-performing products.
 
