@@ -24,7 +24,7 @@ The analysis shows that revenue is concentrated within a few major markets, high
 
 ### Findings
 
-- USA generated the highest revenue.
+- The **USA** generated the highest revenue while also having the largest customer base, indicating that customer volume is a major driver of sales.
 - Spain ranked second.
 - France ranked third.
 - Revenue is concentrated among a few major countries.

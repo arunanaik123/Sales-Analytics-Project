@@ -44,7 +44,7 @@ The company follows a discount-based pricing strategy, as products are generally
 
 ### Findings
 
-- **Classic Cars** generated the highest revenue.
+- **Classic Cars** generated the highest revenue and sold the highest quantity, suggesting consistently strong customer demand.
 - Product revenue is concentrated within a few categories.
 
 ### Business Recommendation
@@ -204,6 +204,54 @@ The company follows a discount-based pricing strategy, as products are generally
 
 ---
 
+# KPI 11 – Deal Size Performance
+
+### Visualization
+
+> ![Deal Size Performance](../images/deal_size_performance.png)
+
+### Findings
+
+- Medium deal size generated the highest total revenue.
+- Medium deals also accounted for the highest number of customer orders and quantity sold.
+- Small and Large deal sizes contributed comparatively less revenue.
+
+### Business Interpretation
+
+The sales distribution indicates that customers primarily purchase products through **Medium-sized deals**. This suggests that the company's pricing strategy and customer purchasing behavior are naturally centered around medium-value transactions.
+
+### Business Recommendation
+
+- Maintain higher inventory levels for products commonly sold through Medium deals.
+- Focus promotional campaigns on Medium deals while creating bundle offers to encourage customers to upgrade to Large deals.
+- Continuously monitor deal size trends to support inventory and sales planning.
+
+---
+
+# KPI 12 – Dominant Deal Size by Product Category
+
+### Visualization
+
+> ![Deal Size by Category](../images/deal_size_by_category.png)
+
+### Findings
+
+- Medium deal size generated the highest revenue across every product category.
+- No category was primarily driven by Small or Large deals.
+- Customer purchasing behavior remained consistent regardless of product category.
+
+### Business Interpretation
+
+The consistent dominance of Medium deal sizes across all product categories suggests that customers have a preferred purchasing pattern. Rather than purchasing in very small or very large quantities, most customers tend to place medium-sized orders, making them the primary revenue driver.
+
+### Business Recommendation
+
+- Prioritize inventory planning around Medium-sized demand across all product categories.
+- Design pricing strategies that encourage Medium customers to transition into Large deals through volume discounts and bundled offers.
+- Continue monitoring category-level purchasing behavior to identify any future shifts in customer demand.
+
+---
+
 # Overall Business Findings
 
 - Revenue is concentrated among a relatively small number of products.
@@ -214,7 +262,6 @@ The company follows a discount-based pricing strategy, as products are generally
 - Several products contribute very little revenue and require business review.
 
 ---
-
 # Strategic Recommendations
 
 ## Product Strategy

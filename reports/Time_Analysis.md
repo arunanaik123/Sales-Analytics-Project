@@ -64,7 +64,7 @@ Understanding these trends helps management prepare for peak demand periods whil
 
 ### Findings
 
-- October and November consistently generate the highest revenue.
+- Revenue consistently peaks during **October** and **November**, suggesting seasonal buying behavior leading into the holiday period.
 - Some months contribute significantly less revenue.
 - Strong seasonal buying behavior exists.
 

@@ -26,7 +26,7 @@ Geographically, the **United States** remains the largest revenue-generating cou
 
 ### Findings
 
-- Euro Shopping Channel generated the highest customer revenue.
+- Euro Shopping Channel generated the highest revenue, indicating that it is one of the company's most valuable customers.
 - Revenue is concentrated among a small number of customers.
 - The top 10 customers contribute a significant portion of company sales.
 

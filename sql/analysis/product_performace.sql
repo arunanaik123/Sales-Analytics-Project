@@ -291,3 +291,62 @@ ORDER BY revenue_contribution DESC;
 
 -- Result:
 -- Displays each product category's percentage contribution to total revenue.
+
+-- ==========================================================
+-- KPI 11 - Overall Deal Size Performance
+-- Business Question:
+-- Which deal size generates the highest revenue and order volume?
+-- ==========================================================
+
+SELECT
+    deal_size,
+    COUNT(DISTINCT order_number) AS total_orders,
+    SUM(quantity) AS total_quantity,
+    ROUND(SUM(sales),2) AS total_revenue
+FROM Order_Details
+GROUP BY deal_size
+ORDER BY total_revenue DESC;
+
+-- Result:
+-- Medium deal size generates the highest revenue and sales volume.
+
+-- ==========================================================
+-- KPI 12 - Dominant Deal Size by Product Category
+-- Business Question:
+-- Which deal size contributes the highest revenue within each product category?
+-- ==========================================================
+
+SELECT
+    product_line,
+    deal_size,
+    revenue
+FROM
+(
+    SELECT *,
+           ROW_NUMBER() OVER
+           (
+               PARTITION BY product_line
+               ORDER BY revenue DESC
+           ) AS rn
+    FROM
+    (
+        SELECT
+            c.product_line,
+            od.deal_size,
+            ROUND(SUM(od.sales),2) AS revenue
+        FROM Orders o
+        JOIN Order_Details od
+            ON o.order_number = od.order_number
+        JOIN Products p
+            ON od.product_id = p.product_id
+        JOIN Categories c
+            ON p.category_id = c.category_id
+        GROUP BY
+            c.product_line,
+            od.deal_size
+    ) t
+) x
+WHERE rn = 1;
+
+-- Result:
+-- Medium deal size is the highest revenue contributor across every product category.
