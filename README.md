@@ -274,7 +274,7 @@ Aspiring Data Analyst
 - Excel
 
 ---
-> 📖 For detailed installation and setup instructions, refer to **setup.md**.
+> 📖 For detailed installation and setup instructions, refer to **[setup.md](setup.md)**.
 ---
 
 ⭐ If you found this project useful, consider giving it a star.
