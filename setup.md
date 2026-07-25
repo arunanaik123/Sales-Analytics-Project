@@ -7,8 +7,8 @@ This guide explains how to set up the project from importing the raw dataset int
 # Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/SALES-ANALYTICS-PROJECT.git
-cd SALES-ANALYTICS-PROJECT
+git clone https://github.com/arunanaik123/Sales-Analytics-Project.git
+cd Sales-Analytics-Project
 ```
 
 ---
@@ -22,7 +22,7 @@ Install the following tools before running the project:
 - Python 3.10+
 - Jupyter Notebook
 - Power BI Desktop
-- VS Code (Optional)
+- VS Code 
 
 ---
 
